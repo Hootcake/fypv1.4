@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-3">
+        <span class="hipster img-fluid rounded"></span>
+    </div>
+    <div class="col-md-9">
+        <h1 class="display-4">Welcome to your FoodPal!</h1>
+        <p class="lead">This is your homepage</p>
+        <div class="btn-group btn-group-toggle">
+		  <label class="btn-primary" ngbButtonLabel>
+		    <input type="checkbox" ngbButton [(ngModel)]="model.left"> 
+		  </label>
+		  <label class="btn-primary" ngbButtonLabel>
+		    <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Show Lacto-Vegetarian Only
+		  </label>
+		</div>
+		<hr>
+		<pre>{{model | json}}</pre>
+		        <li *ngFor="let ingredient of ingredients">
+     				 {{ ingredient }} <button (click)="deleteIngredient(ingredient)" type="button" class="btn btn-danger btn-sm">Delete Ingredient</button>
+     				 <hr>
+     			</li>
+     			
+                <input class="search" [(ngModel)]="searchQuery" placeholder="Search for Recipes">
+        		<button (click)="searchRecipes(searchQuery)" type="button">Find Recipes</button>
+					<div *ngFor="let recipe of recipes" class=container>
+					<div class="panel panel-default">
+						<div class="panel-heading">{{recipe.recipeName}}</div>
+						<div class="panel-body">
+							<img src="{{ recipe.smallImageUrls}}"><p>
+							Rating: {{recipe.rating}}
+						</div>
+						
+						</div>
+                 <button class="btn btn-sm btn-outline-primary" (click)="searchDetail(recipe.id)">See more</button>            
+			</div>
+
+			
+			<div class="col-md-6 col-md-offset-3">
+
+ 
+</div>
+            <span>If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener">GitHub</a>!
+        </p>
+    </div>
+</div>
