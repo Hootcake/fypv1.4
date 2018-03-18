@@ -7,6 +7,7 @@ import { Ng2Webstorage } from 'ngx-webstorage';
 import { FoodPalSharedModule, UserRouteAccessService } from './shared';
 import { FoodPalAppRoutingModule} from './app-routing.module';
 import { FoodPalHomeModule } from './home/home.module';
+import { FoodPalRecommendModule } from './recommend/recommend.module';
 import { FoodPalAdminModule } from './admin/admin.module';
 import { FoodPalAccountModule } from './account/account.module';
 import { FoodPalEntityModule } from './entities/entity.module';

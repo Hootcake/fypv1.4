@@ -1,0 +1,14 @@
+<div>
+    <h2>
+        <span>Recommends</span>
+        <p></p>
+        <button (click)="test()" type="button" class="btn btn-success btn-lg" *ngIf="testVar">Begin</button>
+            <div class="table-responsive" *ngIf="itemCategory">
+            <table class="table table-striped">
+            	<tbody>
+            		<tr><button (click)="listIngredients('meat')" type="button" class="btn btn-success btn-lg" >Begin</button></tr>
+            	</tbody>
+            </table>
+            </div>
+    
+</div>
