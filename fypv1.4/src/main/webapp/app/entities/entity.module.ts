@@ -3,6 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FoodPalInventoryModule } from './inventory/inventory.module';
 import { FoodPalCategoryModule } from './category/category.module';
 import { FoodPalRecommendModule } from './recommend/recommend.module';
+import { FoodPalShopping_ListModule } from './shopping-list/shopping-list.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -10,6 +11,7 @@ import { FoodPalRecommendModule } from './recommend/recommend.module';
         FoodPalInventoryModule,
         FoodPalCategoryModule,
         FoodPalRecommendModule,
+        FoodPalShopping_ListModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

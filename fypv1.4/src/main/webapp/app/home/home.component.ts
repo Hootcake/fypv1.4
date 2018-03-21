@@ -178,6 +178,5 @@ export class HomeComponent implements OnInit {
       }
       modalRef.componentInstance.yield = query.yield;
       modalRef.componentInstance.image = largeImage;  
-      //console.log(query + 'TEST')
     }
 }
